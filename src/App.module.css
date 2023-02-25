@@ -28,6 +28,7 @@ body {
 }
 .ProductPreview > img {
   width: 100%;
+  position: relative;
 }
 .ProductData {
   width: 50%;
@@ -76,9 +77,57 @@ body {
   padding: 12px 24px;
   font-weight: 600;
 }
+.TimeSection{
+  position: absolute;
+  top: 38%;
+  left: 27%;
+
+
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
 .SelectedFeatureItem{
   color: white;
   background-color: gray;
+}
+.HeartBeatSection{
+  position: absolute;
+  top: 38%;
+  left: 29%;
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.HeartBeatSection > p {
+  margin-top: 16px;
+}
+
+.HeartBeatSection > i {  
+  color: red;
+  animation: beat 1s infinite; 
+}
+@keyframes beat {
+  0% {
+    transform : scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100%{
+    transform: scale(1, 1);
+  }
+}
+
+.BuyNow{
+  color: white;
+  background-color: teal; 
+  font-size: 20px;
+  border-radius: 8px;
+  border: 0px;
+  padding: 12px 24px;
+  margin-top: 36px;
 }
 
 
